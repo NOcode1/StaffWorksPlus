@@ -1,0 +1,4 @@
+name: StaffWorksPlus
+main: me.oppyusa.plugin.Main
+version: 0.0.2
+commands:

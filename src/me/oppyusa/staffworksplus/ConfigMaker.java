@@ -25,10 +25,10 @@ public class ConfigMaker {
 		}
 		customConfig = YamlConfiguration.loadConfiguration(config);
 	}
-	public static FileConfiguration get() {
+	public static final FileConfiguration get() {
 		return customConfig;
 	}
-	public static void save() {
+	public static final void save() {
 		try{
 			customConfig.save(config);
 		} catch (IOException e) {

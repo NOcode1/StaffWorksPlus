@@ -10,18 +10,15 @@ import me.oppyusa.staffworksplus.ConfigMaker;
 
 public class ReloadConfig implements CommandExecutor {
 	 
+    
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        Player player = (Player) sender;
-        if (sender instanceof Player){
-        	ConfigMaker.get().options();
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6This works!"));
+       if (cmd.getName().equalsIgnoreCase("staffworks")) {
+    	   Player player = (Player) sender;
+    	   ConfigMaker.get().options();
+    	   player.sendMessage(ChatColor.AQUA + "StaffWorks+ has been reloaded. If this bugs out, please make a bug report.");
+          return true;
         }
-        else {
-        	ConfigMaker.get().options();
-            sender.sendMessage("Test");
-        }
-        return true;
+        return false;
     }
- 
 }

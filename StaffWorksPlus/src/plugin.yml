@@ -1,0 +1,10 @@
+name: StaffWorksPlus
+author: Oppyusa
+version: 0.0.2
+api-version: 1.15
+description: Lets staff administrate as fast a possible
+main: me.oppyusa.StaffWorksPlus.Main
+commands:
+   banhammer:
+     description: Gives the player the BanHammer.
+     usage: /banhammer

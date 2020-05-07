@@ -1,1 +1,13 @@
-version: 0.0.2
+messages:
+    Prefix: '&8(&aBanHammer&8)'
+    Banned-Player: '%prefix% &fYou''ve just banned &b%player%&f.'
+    No-Permission: '%prefix% &fSorry, but you don''t have permission to do that.'
+    Obtained-Hammer: '%prefix% &fYou''ve &aobtained &fthe &4&lBAN HAMMER&f.'
+BanHammer:
+    Name: '&bBan Hammer &7(Right click a player)'
+    Commands:
+    - 'ban %player% Perm Ban'
+    - 'bc %player% has been perm banned by %clicker%.'
+    Sounds:
+        Enabled: false
+        Sound: BLOCK_GLASS_BREAK
